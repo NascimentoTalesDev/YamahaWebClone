@@ -5,7 +5,95 @@
     .section-1{
         height: 100vh;
         width: 100%;
-        background-image: url("../../assets/images/homepage_accessories_mobile_bkg_C.png");
-
+        background-image: url("../assets/images/capa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-image: url("../assets/images/homepage_hero_desktop.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            .actions{
+                margin-top: 20%;
+                display: flex;
+                flex-direction: row;
+                a{
+                    margin: 0 3rem;
+                    font-size: 3.5rem;
+                    border-radius: 8px;
+                    padding: 4rem 6rem;font-weight: bold;
+                }
+                #a1{
+                    background-color: $color1;
+                    color: $color5;
+                }
+                #a2{
+                    background-color: $color5;
+                    color: $color1;
+                }
+            }
+            .arrow{
+                display: flex;
+                flex-direction: column;
+                
+                font-size: 8rem;
+            }
+        }
     }
+}
+
+//Max 1800px
+@media (max-width: 1800px){
+    
+}
+
+//Max 1100px
+@media (max-width: 1100px){
+}
+
+//Max 700px
+@media (max-width: 700px){
+    .all{
+       
+        .section-1{
+            
+            .info{
+               
+                .actions{
+                    
+                    a{
+                        margin: 0 1.5rem;
+                        font-size: 1.5rem;
+                        border-radius: 4px;
+                        padding: 2rem 3rem;font-weight: bold;
+                    }
+                    #a1{
+                        background-color: $color1;
+                        color: $color5;
+                    }
+                    #a2{
+                        background-color: $color5;
+                        color: $color1;
+                    }
+                }
+                .arrow{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+
+//Max 400px
+@media (max-width: 400px){
 }

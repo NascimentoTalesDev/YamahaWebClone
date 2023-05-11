@@ -173,5 +173,68 @@ Body .container {
 .all .section-1 {
   height: 100vh;
   width: 100%;
-  background-image: url("../../assets/images/homepage_accessories_mobile_bkg_C.png");
+  background-image: url("../assets/images/capa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all .section-1 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../assets/images/homepage_hero_desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all .section-1 .info .actions {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+}
+.all .section-1 .info .actions a {
+  margin: 0 3rem;
+  font-size: 3.5rem;
+  border-radius: 8px;
+  padding: 4rem 6rem;
+  font-weight: bold;
+}
+.all .section-1 .info .actions #a1 {
+  background-color: #ffffff;
+  color: #c80226;
+}
+.all .section-1 .info .actions #a2 {
+  background-color: #c80226;
+  color: #ffffff;
+}
+.all .section-1 .info .arrow {
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
+}
+
+@media (max-width: 700px) {
+  .all .section-1 .info .actions a {
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    padding: 2rem 3rem;
+    font-weight: bold;
+  }
+  .all .section-1 .info .actions #a1 {
+    background-color: #ffffff;
+    color: #c80226;
+  }
+  .all .section-1 .info .actions #a2 {
+    background-color: #c80226;
+    color: #ffffff;
+  }
+  .all .section-1 .info .arrow {
+    display: flex;
+    flex-direction: column;
+    font-size: 8rem;
+  }
 }/*# sourceMappingURL=main.css.map */
