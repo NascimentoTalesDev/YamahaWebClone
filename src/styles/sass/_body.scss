@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans,sans-serif;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+html{
+    font-size: 62.5%;
+}
+
+Body{
+    overflow-x: hidden;
+    background-color: $color1;
+    min-height: 100vh;
+    width: 100vw;
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
