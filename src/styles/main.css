@@ -170,71 +170,146 @@ Body .container {
   display: flex;
   flex-direction: column;
 }
-.all .section-1 {
-  height: 100vh;
+
+.section-1 {
+  height: 130vh;
   width: 100%;
   background-image: url("../assets/images/capa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.all .section-1 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.section-1 .container-main {
+  height: 100%;
   background-image: url("../assets/images/homepage_hero_desktop.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-top: 10%;
 }
-.all .section-1 .info .actions {
-  margin-top: 20%;
+.section-1 .container-main .actions {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22%;
 }
-.all .section-1 .info .actions a {
+.section-1 .container-main .actions a {
   margin: 0 3rem;
   font-size: 3.5rem;
   border-radius: 8px;
   padding: 4rem 6rem;
   font-weight: bold;
 }
-.all .section-1 .info .actions #a1 {
+.section-1 .container-main .actions #a1 {
   background-color: #ffffff;
   color: #c80226;
 }
-.all .section-1 .info .actions #a2 {
+.section-1 .container-main .actions #a2 {
   background-color: #c80226;
   color: #ffffff;
 }
-.all .section-1 .info .arrow {
+
+@media (max-width: 1800px) {
+  .section-1 {
+    height: 110vh;
+  }
+  .section-1 .container-main .actions a {
+    margin: 0 1.4rem;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .section-1 {
+    height: 130vh;
+    background-image: url("../assets/images/homepage_hero_mobile_bkg.jpg");
+  }
+  .section-1 .container-main {
+    background-image: url("../assets/images/homepage_hero_mobile.png");
+    margin-top: 30%;
+  }
+  .section-1 .container-main .actions {
+    flex-direction: column;
+    padding-top: 35%;
+  }
+  .section-1 .container-main .actions #a1 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .section-1 {
+    height: 100vh;
+  }
+  .section-1 .container-main {
+    margin-top: 60%;
+  }
+  .section-1 .container-main .actions {
+    padding-top: 40%;
+  }
+}
+.section-2 {
+  width: 90%;
+  margin: 200px auto;
+}
+.section-2 .products {
   display: flex;
-  flex-direction: column;
-  font-size: 8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-2 .products .product {
+  margin: 1rem;
+  flex: 30%;
+  cursor: pointer;
+}
+.section-2 .products .product .image {
+  position: relative;
+  border-bottom: 1rem solid red;
+}
+.section-2 .products .product .image img {
+  border: 2px solid #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.section-2 .products .product .image figcaption {
+  bottom: 0;
+  color: #ffffff;
+  padding: 2rem;
+  position: absolute;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.section-2 .products .product:hover > .image figcaption {
+  color: #808183;
 }
 
-@media (max-width: 700px) {
-  .all .section-1 .info .actions a {
-    margin: 0 1.5rem;
+@media (max-width: 1800px) {
+  .section-2 {
+    width: 85%;
+    margin: 100px auto;
+  }
+  .section-2 .products .product .image {
+    border-bottom: 0.5rem solid red;
+  }
+  .section-2 .products .product .image figcaption {
     font-size: 1.5rem;
-    border-radius: 4px;
-    padding: 2rem 3rem;
-    font-weight: bold;
   }
-  .all .section-1 .info .actions #a1 {
-    background-color: #ffffff;
-    color: #c80226;
+}
+@media (max-width: 700px) {
+  .section-2 {
+    width: 95%;
+    margin: 80px auto;
   }
-  .all .section-1 .info .actions #a2 {
-    background-color: #c80226;
-    color: #ffffff;
+  .section-2 .products .product .image figcaption {
+    font-size: 1.3rem;
   }
-  .all .section-1 .info .arrow {
-    display: flex;
-    flex-direction: column;
-    font-size: 8rem;
+}
+@media (max-width: 550px) {
+  .section-2 {
+    width: 98%;
+    margin: 50px auto;
+  }
+  .section-2 .products .product .image figcaption {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

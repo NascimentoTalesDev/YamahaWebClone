@@ -1,0 +1,104 @@
+.section-2{
+    width: 90%;
+    margin: 200px auto;
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .product{
+            margin: 1rem;
+            flex: 30%;
+            cursor: pointer;
+            .image{
+                position: relative;
+                border-bottom: 1rem solid red;
+                img{
+                    border: 2px solid $color1;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    overflow: hidden;
+                    width: 100%;
+                }
+                figcaption{
+                    bottom: 0;
+                    color: $color1;
+                    padding: 2rem;
+                    position: absolute;
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        .product:hover > .image figcaption{
+            color: $color2;
+        }
+    }
+}
+
+//Max 1800px
+@media (max-width: 1800px){
+    .section-2{
+        width: 85%;
+        margin: 100px auto;
+        .products{
+            .product{
+                .image{
+                    border-bottom: 0.5rem solid red;
+                    img{
+                    }
+                    figcaption{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Max 1100px
+@media (max-width: 1100px){
+
+}
+
+//Max 700px
+@media (max-width: 700px){
+    .section-2{
+        width: 95%;
+        margin: 80px auto;
+        .products{
+            .product{
+                .image{
+                    img{
+                    }
+                    figcaption{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Max 550px
+@media (max-width: 550px){
+    .section-2{
+        width: 98%;
+        margin: 50px auto;
+        .products{
+            .product{
+                .image{
+                    img{
+                    }
+                    figcaption{
+                        font-size: 1.5rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Max 400px
+@media (max-width: 400px){
+}
