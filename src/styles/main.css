@@ -56,15 +56,27 @@ Body .container {
   margin-left: 5.8rem;
 }
 .nav-bar .web .options .items .item a {
-  transition: 0.5s;
-  border-bottom: 3px solid transparent;
   padding: 1.5rem 0;
   font-size: 4rem;
   font-weight: bold;
   color: #808183;
+  position: relative;
 }
 .nav-bar .web .options .items .item a:hover {
   color: #222b33;
+  transition: color 0.6s;
+}
+.nav-bar .web .options .items .item a:before {
+  content: "";
+  border-bottom: 3px solid #222b33;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.6s;
+  width: 0;
+}
+.nav-bar .web .options .items .item a:hover:before {
+  width: 100%;
   border-color: #222b33;
 }
 .nav-bar .web .right .items-2 {
