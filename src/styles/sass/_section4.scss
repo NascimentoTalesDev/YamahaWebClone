@@ -1,32 +1,40 @@
-.section-3{
-    height: 80vh;
-    width: 100%;
-    position: relative;
-    margin-top: 100px;
+.section-4{
+    margin-top: 50px;
     margin-bottom: 100px;
-    .container-flex{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    .left{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        width: 60%;
         height: 100%;
-        width: 100%;
-        .info{
+        .image-accessories{
+            background-image: url('../assets/images/homepage_accessories_DESKTOP_bkg_C.png');
+            height: 80%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 100%;
+        }
+    }
+    .right{
+        width: 40%;
+        height: 100%;
+        .accessories{
             display: flex;
-            justify-content: flex-start;
-            height: 100%;
             align-items: center;
-            flex-direction: column;
-            width: 35%;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
             .container-info{
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-                width: 90%;
+                width: 80%;
                 h2{
-                    text-align: center;
                     text-transform: uppercase;
                     font-size: 6rem;
                     color: $color3;
@@ -47,36 +55,16 @@
                 }
             }
         }
-        .hm{
-            display: flex;
-            align-items: flex-end;
-            height: 100%;
-            z-index: 10;
-            img{
-                height: 90%;
-                width: 100%;
-            }
-        }
-    }
-    .back-image{
-        position: absolute;
-        bottom: 0;
-        height: 30%;
-        width: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-        }
     }
 }
+
 
 //Max 1800px
 @media (max-width: 1800px){
     
-    .section-3{
-        margin-top: 50px;
-        .container-flex{
-            .info{
+    .section-4{
+        .right{
+            .accessories{
                 .container-info{
                     h2{
                         font-size: 4rem;
@@ -97,14 +85,24 @@
 //Max 1100px
 @media (max-width: 1100px){
 
-    .section-3{
-        height: 90vh;
-        .container-flex{
-            flex-direction: column;
-            .info{
-                width: 50%;
+    .section-4{
+        margin-top: 0px;
+        flex-direction: column-reverse;
+        .left{
+            width: 100%;
+            height: 65%;
+            margin-top: 50px;
+            .image-accessories{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .right{
+            width: 100%;
+            height: 35%;
+            .accessories{
                 .container-info{
-                    width: 100%;
+                    width: 50%;
                     h2{
                         font-size: 3rem;
                     }   
@@ -116,12 +114,6 @@
                     }
                 }
             }
-            .hm{
-                height: 60%;
-            }
-        }
-        .back-image{
-            height: 20%;
         }
     }
 }
@@ -133,12 +125,9 @@
 
 //Max 550px
 @media (max-width: 550px){
-    .section-3{
-        height: 70vh;
-        .container-flex{
-            flex-direction: column;
-            .info{
-                width: 100%;
+    .section-4{
+        .right{
+            .accessories{
                 .container-info{
                     width: 100%;
                     h2{
@@ -154,12 +143,6 @@
                     }
                 }
             }
-            .hm{
-                height: 100%;
-            }
-        }
-        .back-image{
-            height: 20%;
         }
     }
 }
